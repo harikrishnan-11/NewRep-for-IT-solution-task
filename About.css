@@ -20,7 +20,7 @@
     --font-size-l:1.5rem;
     --font-size-xl:2rem;
     --font-size-xxl:5.5rem;
-    --font-h1-clamp:clamp(30px,8vw,5.5rem);
+    --font-h1-clamp:clamp(30px,7vw,3.5rem);
     --font-p-clamp:clamp(0.5rem,2vw,1.2rem);
     /*Font Weight */
 
@@ -111,6 +111,20 @@ header{
 }
 
 
+main{
+    color: var(--white-color);
+}
+
+
+/* open and  close button */
+#menu-close-btn, #menu-open-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 .about-page{
     display: flex;
     flex-direction: column;
@@ -124,7 +138,7 @@ header{
 
 }
 .about-page h1{
-    font-size: clamp(25px, 3vw, 45px);
+    font-size:var(--font-h1-clamp);
     line-height: 1.5;
     max-width: 50%;
     color:white;
@@ -575,4 +589,91 @@ header{
   .socials a {
     margin: 0 8px;
   }
+}
+@media  screen and (max-width:900px) {
+
+    :root{
+        --font-size-m:1rem;
+        --font-size-l:1.3rem;
+        --font-size-xl:1.5rem;
+        --font-size-xx:2rem;
+    }
+    
+
+    #menu-open-btn{
+        position: absolute;
+        left:100%;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+
+        
+    }
+    
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-menu li{
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+    }
+    #login-btn{
+        background: var(--primary-color);
+
+    }
+    .nav-link:hover{
+         background:none;
+    }
+        #menu-open-btn {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    #menu-close-btn {
+        display: block; 
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: -300px; 
+        width: 300px;
+        height: 100%;
+        background: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: left 0.4s ease;
+        z-index: 100;
+    }
+
+    /* This is the fix: set left to 0 to slide it in */
+    body.show-mobile-menu .navbar {
+        left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+    body.show-mobile-menu .navbar {
+        left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+#menu-close-btn, #menu-open-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
 }
