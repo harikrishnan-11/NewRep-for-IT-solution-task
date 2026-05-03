@@ -15,8 +15,8 @@ main {
 .auth-card,
 .dashboard-card,
 .latest-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:linear-gradient(120deg,#8f4df7,#ff6fb7);
+  border: 1px solid 0px 0px 16px 5px rgba(255, 255, 255, 0.8);
   border-radius: 26px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 }
@@ -38,10 +38,10 @@ main {
 .contact-copy,
 .form-label,
 .login-note {
-  color: #bdbdbd;
+  color: #ffffff;
 }
 
-.page-copy {
+.page-copy {    
   margin-top: 18px;
   max-width: 760px;
   line-height: 1.75;
@@ -60,6 +60,7 @@ main {
 .dashboard-inner {
   display: grid;
   gap: 24px;
+
 }
 
 .grid-3 {
@@ -84,7 +85,7 @@ main {
 .breadcrumb,
 .form-label,
 .card-subtitle {
-  color: #8f8f8f;
+  color: #ffffff;
   letter-spacing: 0.02em;
 }
 
@@ -145,7 +146,7 @@ main {
 }
 
 .blog-copy {
-  color: #d0d0d0;
+  color: #ffffff;
   margin-bottom: 24px;
   line-height: 1.7;
 }
@@ -170,7 +171,7 @@ main {
 .breadcrumb {
   display: inline-flex;
   gap: 6px;
-  color: #9a9a9a;
+  color: #dbdbdb;
   margin-bottom: 18px;
   font-size: 0.95rem;
 }
@@ -213,7 +214,7 @@ main {
 }
 
 .form-card {
-  background: rgba(255, 255, 255, 0.02);
+  background: linear-gradient(120deg,#8f4df7,#ff6fb7);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 30px;
@@ -226,7 +227,7 @@ main {
 }
 
 .form-field label {
-  color: #b6b6b6;
+  color: #fdf7f7;
   font-size: 0.95rem;
 }
 
@@ -282,7 +283,7 @@ main {
 }
 
 .form-group label {
-  color: #bdbdbd;
+  color: #ffffff;
 }
 
 .form-group input {
@@ -290,12 +291,12 @@ main {
   padding: 14px 16px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.02);
+  background:white;
   color: #fff;
 }
 
 .form-group input::placeholder {
-  color: #8a8a8a;
+  color: #000000;
 }
 
 .auth-actions {
@@ -317,7 +318,7 @@ main {
 
 .dashboard-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   gap: 18px;
   flex-wrap: wrap;
@@ -352,7 +353,7 @@ main {
 }
 
 .stat-card p {
-  color: #b1b1b1;
+  color: #ff9b00;
 }
 
 .dashboard-grid {
@@ -392,14 +393,14 @@ main {
 .dashboard-summary .summary-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: 25px;
 }
 
 .summary-card {
   padding: 22px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid white;
 }
 
 .summary-card h4 {
@@ -418,7 +419,7 @@ main {
   .dashboard-grid,
   .dashboard-inner,
   .dashboard-summary .summary-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ; 
   }
 }
 

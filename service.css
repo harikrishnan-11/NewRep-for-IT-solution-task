@@ -14,7 +14,7 @@
     --white-color:white;
     --dark-color:black;
     --primary-color: #0c0214;
-    --secondary-color:blueviolet;
+    --secondary-color:rgb(163, 77, 243);
     --button-color:linear-gradient(120deg,#8f4df7,#ff6fb7);
     --medium-gray-color:#ccc;
 
@@ -153,6 +153,7 @@ header{
     width: fit-content;
     padding: 8px 16px ;
     border-radius: 30px;
+    font-size: 1rem;
 }
 .badge {
     background:var(--primary-color);
@@ -172,9 +173,7 @@ header{
 }
 
 .text-gradient {
-    background:var(--primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color:var(--secondary-color);
 }
 
 .service-hero p {
