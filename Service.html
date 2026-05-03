@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Stackly IT Solutions</title>
     <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,8 +13,8 @@
 
     <!-- Header / Nav -->
           <header>
+              <button id="menu-close-btn" class="fas fa-times"></button>
         <nav class="navbar">
-          <button id="menu-close-btn" class="fas fa-times"></button>
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">Stackly</h2>
             </a>
@@ -28,14 +29,14 @@
                   <a href="#service-hero" class="nav-link">Service</a>  
                 </li>
                 <li class="nav-item">
-                  <a href="#blog" class="nav-link">Blog</a>  
+                  <a href="./blog.html" class="nav-link">Blog</a>  
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link">Contact</a>  
+                  <a href="./contact.html" class="nav-link">Contact</a>  
                 </li>
             </div>
             <div class="login-btn">
-                  <a href="#login" class="nav-link" id="login-btn">Login</a>  
+                  <a href="./login.html" class="nav-link" id="login-btn">Login</a>  
             </div>
             <button id="menu-open-btn" class="fas fa-bars"></button>
             <script src="./navbar.js"></script>
@@ -167,10 +168,62 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+  <div class="footer-container">
 
-    <footer>
-        <p>&copy; 2026 Stackly IT Solutions. All rights reserved.</p>
-    </footer>
+    <!-- Company -->
+    <div class="footer-col">
+      <h3>Stackly IT Solutions</h3>
+      <p>
+        We provide smart IT solutions to help businesses grow faster, stay secure,
+        and succeed in the digital world.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">Cloud Solutions</a></li>
+        <li><a href="#">Cyber Security</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: info@itsolutions.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: Tamil Nadu, India</p>
+
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">💼</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 IT Solutions. All rights reserved.</p>
+  </div>
+</footer>
+    
 
 </body>
 </html>

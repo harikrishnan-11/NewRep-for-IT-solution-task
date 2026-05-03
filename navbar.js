@@ -1,10 +1,20 @@
-const menuOpenBtn = document.querySelector("#menu-open-btn");
-const menuCloseBtn = document.querySelector("#menu-close-btn");
+document.addEventListener("DOMContentLoaded", () => {
+const menuOpenBtn = document.getElementById("menu-open-btn");
+const menuCloseBtn = document.getElementById("menu-close-btn");
+const body = document.body;
 
-menuOpenBtn.addEventListener('click', () => {
-    document.body.classList.add("show-mobile-menu");
-});
+// Open menu
+if (menuOpenBtn) {
+    menuOpenBtn.addEventListener("click", () => {
+        body.classList.add("show-mobile-menu");
+    });
+}
 
-menuCloseBtn.addEventListener('click', () => {
-    document.body.classList.remove("show-mobile-menu");
+// Close menu
+if (menuCloseBtn) {
+    menuCloseBtn.addEventListener("click", () => {
+        body.classList.remove("show-mobile-menu");
+    });
+}
+
 });

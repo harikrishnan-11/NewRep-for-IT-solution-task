@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Stackly IT Solutions</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <button id="menu-close-btn" class="fas fa-times"></button>
+      <a href="./index.html" class="nav-logo">
+        <h2 class="logo-text">Stackly</h2>
+      </a>
+      <div class="nav-menu">
+        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="./Service.html" class="nav-link">Service</a></li>
+        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+      </div>
+      <div class="login-btn"><a href="./admin-login.html" class="nav-link" id="login-btn">Admin</a></div>
+      <button id="menu-open-btn" class="fas fa-bars"></button>
+      <script src="./navbar.js"></script>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-block">
+      <div class="dashboard-top">
+        <div class="dashboard-heading">
+          <h1 class="dashboard-title">Admin Dashboard</h1>
+          <p>Clean, modern oversight for users, performance, and growth insights across your financial platform.</p>
+        </div>
+        <div>
+          <button class="btn-primary" type="button">Create Report</button>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <h3>1.2K</h3>
+          <p>Active Users</p>
+        </div>
+        <div class="stat-card">
+          <h3>98%</h3>
+          <p>System Uptime</p>
+        </div>
+        <div class="stat-card">
+          <h3>320</h3>
+          <p>Open Requests</p>
+        </div>
+        <div class="stat-card">
+          <h3>4.8%</h3>
+          <p>Weekly Growth</p>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div>
+          <div class="dashboard-card">
+            <h2 class="card-title">Performance Overview</h2>
+            <p>Monitor adoption, revenue signals, and customer satisfaction in one centralized view.</p>
+            <div class="card-list">
+              <div class="summary-card">
+                <h4>Revenue</h4>
+                <p>Track monthly product revenue and recurring subscriptions.</p>
+              </div>
+              <div class="summary-card">
+                <h4>User Retention</h4>
+                <p>See how many users return to the platform week over week.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-card">
+            <h2 class="card-title">Recent Activity</h2>
+            <p>Latest actions from users, ticket updates, and admin notes.</p>
+            <div class="dashboard-summary">
+              <div class="summary-card">
+                <h4>New signups</h4>
+                <p>48 new accounts joined in the last 24 hours.</p>
+              </div>
+              <div class="summary-card">
+                <h4>Support tickets</h4>
+                <p>12 tickets are awaiting response from support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="dashboard-card">
+            <h2 class="card-title">System Health</h2>
+            <p>All systems are healthy and running within optimal levels.</p>
+            <div class="card-list">
+              <div class="summary-card">
+                <h4>API Latency</h4>
+                <p>32ms average response time over the last hour.</p>
+              </div>
+              <div class="summary-card">
+                <h4>Database</h4>
+                <p>Queries are performing normally with no alerts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-card">
+            <h2 class="card-title">Goals</h2>
+            <p>Focus on the next priorities for growth and security.</p>
+            <div class="summary-card">
+              <h4>Next milestone</h4>
+              <p>Launch the new finance analytics module by end of month.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Stackly IT Solutions</h3>
+        <p>We provide smart IT solutions to help businesses grow faster, stay secure, and succeed in the digital world.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Service.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="./Service.html">Web Development</a></li>
+          <li><a href="./Service.html">App Development</a></li>
+          <li><a href="./Service.html">Cloud Solutions</a></li>
+          <li><a href="./Service.html">Cyber Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: info@itsolutions.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Tamil Nadu, India</p>
+        <div class="socials">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">💼</a>
+          <a href="#">📸</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 IT Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

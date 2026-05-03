@@ -393,10 +393,14 @@ main{
     }
 
     #menu-close-btn {
-        display: block; 
+        display: none; 
         position: absolute;
         top: 20px;
         right: 20px;
+    }
+
+    body.show-mobile-menu #menu-close-btn {
+        display: block;
     }
 
     .navbar {

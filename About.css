@@ -111,16 +111,32 @@ header{
 }
 
 
-main{
-    color: var(--white-color);
+#menu-open-btn,#menu-close-btn {
+    display: none;
+    position: fixed;   /* fixed, not absolute */
+    top: 15px;
+    right: 20px;       /* place it top-right, visible always */
+    color: white;
+    font-size: 30px;
+    z-index: 999;
 }
 
 
-/* open and  close button */
-#menu-close-btn, #menu-open-btn {
-    display: none;
-    color: white;
-    cursor: pointer;
+@media screen and (max-width: 900px) {
+    #menu-open-btn {
+        display: block;
+    }
+    
+    #menu-close-btn {
+        display: none; 
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    body.show-mobile-menu #menu-close-btn {
+        display: block;
+    }
 }
 
 
@@ -626,16 +642,13 @@ main{
     .nav-link:hover{
          background:none;
     }
-        #menu-open-btn {
-        display: block;
-        font-size: 1.5rem;
-    }
+    
 
-    #menu-close-btn {
+   #menu-close-btn {
         display: block; 
         position: absolute;
         top: 20px;
-        right: 20px;
+        left: 20px;
     }
 
     .navbar {
@@ -652,7 +665,6 @@ main{
         z-index: 100;
     }
 
-    /* This is the fix: set left to 0 to slide it in */
     body.show-mobile-menu .navbar {
         left: 0;
     }
@@ -662,9 +674,7 @@ main{
         width: 100%;
         margin-top: 40px;
     }
-    body.show-mobile-menu .navbar {
-        left: 0;
-    }
+  
 
     .nav-menu {
         flex-direction: column;
@@ -672,8 +682,4 @@ main{
         margin-top: 40px;
     }
 }
-#menu-close-btn, #menu-open-btn {
-    display: none;
-    color: white;
-    cursor: pointer;
-}
+
